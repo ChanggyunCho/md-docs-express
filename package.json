@@ -1,6 +1,6 @@
 {
   "name": "md-docs-express",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "md document router on express",
   "main": "index.js",
   "scripts": {
@@ -13,15 +13,24 @@
   "keywords": [
     "md"
   ],
-  "author": "Changgyun Cho",
+  "author": {
+    "name": "Changgyun Cho",
+    "email": "ckcho87@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "chyang",
+      "email": "yangk2@live.co.kr"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ChanggyunCho/md-docs-express/issues"
   },
   "homepage": "https://github.com/ChanggyunCho/md-docs-express#readme",
   "dependencies": {
-    "express": "^4.15.2",
-    "marked": "^0.3.6",
-    "swagger-ui": "^3.0.5"
+    "express": "4.15.2",
+    "marked": "0.3.6",
+    "swagger-ui": "3.0.5"
   }
 }
