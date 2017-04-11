@@ -61,7 +61,7 @@
         <% for(var i=0; i<list.length; i++) {%>
             <li><a href="/docs/<%= list[i] %>"><%= list[i] %></a></li>
         <% } %>
-        <% if(swaggerDoc) { %>
+        <% if(hasSwaggerDoc) { %>
         <li><a href="/docs/swagger?url=/swagger.json">swagger</a></li>
         <% } %>
       </ul><br>
