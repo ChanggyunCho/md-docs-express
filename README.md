@@ -90,3 +90,7 @@ node bin/www
 6. Look your page
 
 <http://localhost:8080/docs>
+
+![picture1](/capture1.PNG)
+
+![picture2](/capture2.PNG)
