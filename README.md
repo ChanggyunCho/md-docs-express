@@ -77,7 +77,7 @@ npm install --save md-docs-express
 
 ```node
 app.use('/docs', require('md-docs-express')({
-    mddir: require('path').join(__dirname, 'docs'),
+    mddir: require('path').join(__dirname, 'documents'),
     title: 'Hello World!'
 }));
 ```
