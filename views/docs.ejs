@@ -62,10 +62,10 @@
       <h3><%= title %></h3>
       <ul class="nav nav-pills nav-stacked">
         <% for(var i=0; i<list.length; i++) {%>
-            <li><a href="/docs/<%= list[i] %>"><%= list[i] %></a></li>
+            <li><a href="<%= baseUrl %>/<%= list[i] %>"><%= list[i] %></a></li>
         <% } %>
         <% if(hasSwaggerDoc) { %>
-        <li><a href="swagger?url=/swagger.json">swagger</a></li>
+        <li><a href="<%= baseUrl %>/swagger?url=<%= baseUrl %>/swagger/apidoc">swagger</a></li>
         <% } %>
       </ul><br>
     </div>
