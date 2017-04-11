@@ -1,6 +1,6 @@
 {
   "name": "md-docs-express",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "md document router on express",
   "main": "index.js",
   "scripts": {

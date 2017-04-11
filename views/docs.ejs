@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko-kr">
 <head>
-  <title>Bootstrap Example</title>
+  <% if(typeof mdfilename !== 'undefined') { %>
+  <title> <%= mdfilename %></title>
+  <% } else { %>
+  <title> <%= title %> </title>
+  <% } %>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -55,13 +59,13 @@
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav">
-      <h3>미래먹거리-nxth.io</h3>
+      <h3><%= title %></h3>
       <ul class="nav nav-pills nav-stacked">
         <% for(var i=0; i<list.length; i++) {%>
             <li><a href="/docs/<%= list[i] %>"><%= list[i] %></a></li>
         <% } %>
         <% if(hasSwaggerDoc) { %>
-        <li><a href="/docs/swagger?url=/swagger.json">swagger</a></li>
+        <li><a href="swagger?url=/swagger.json">swagger</a></li>
         <% } %>
       </ul><br>
     </div>

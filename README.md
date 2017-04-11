@@ -25,7 +25,6 @@ app.use('/docs', require('md-docs-express')(option));
 - __hasSetting__: if true, read \<mddir\>/settings.json for various setting like listing order
 - __debug__: debug flag
 - __title__: page title
-- __swagger__: flag for using swagger docs
 - __swaggerDoc__: swagger document (json format)
 
 ## settings.json
