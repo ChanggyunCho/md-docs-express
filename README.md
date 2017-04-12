@@ -41,7 +41,23 @@ If there are 3 files[A.md, B.md, C.md] are in mddir, you can set their order as 
 }
 ```
 
-## ETC
+## Swagger document
+
+If you want to display swagger doc, specify swaggerDoc to option.  
+The path of the SwaggerDoc will be \<path\>/swagger.  
+Swagger json string will be exposed at \<path\>/swagger/apidoc.
+Swagger-UI 2.2.10 is used.
+
+```node
+var option = {
+    mddir: require('path').join(__dirname, 'mddir'),
+    swaggerDoc: {Swagger Doc json object}
+};
+
+app.use('/docs', require('md-docs-express')(option));
+```
+
+## Known Issues
 
 - support sub-directories are not supported yet...
 

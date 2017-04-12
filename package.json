@@ -1,6 +1,6 @@
 {
   "name": "md-docs-express",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "md document router on express",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,6 @@
   "homepage": "https://github.com/ChanggyunCho/md-docs-express#readme",
   "dependencies": {
     "express": "4.15.2",
-    "marked": "0.3.6",
-    "swagger-ui": "3.0.5"
+    "marked": "0.3.6"
   }
 }
