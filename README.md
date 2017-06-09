@@ -29,7 +29,7 @@ app.use('/docs', require('md-docs-express')(option));
 
 ## settings.json
 
-If there are 3 files[A.md, B.md, C.md] are in mddir, you can set their order as following
+If there are 3 files[A.md, B.md, C.md] are in mddir, you can set their order as following.  
 
 ```json
 {
@@ -37,6 +37,23 @@ If there are 3 files[A.md, B.md, C.md] are in mddir, you can set their order as 
         "C",
         "A",
         "B"
+    ]
+}
+```
+
+Also you can specify directory name
+
+```bash
+mkdir subdir
+```
+
+```json
+{
+    "listorder": [
+        "C",
+        "A",
+        "B",
+        "subdir"
     ]
 }
 ```
@@ -59,7 +76,7 @@ app.use('/docs', require('md-docs-express')(option));
 
 ## Known Issues
 
-- support sub-directories are not supported yet...
+- Subdirectory is now supported, but has 1-depth limitation
 
 ## Demo
 
