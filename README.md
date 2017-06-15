@@ -1,4 +1,5 @@
 # md-docs-express
+
 md document router on express
 
 ## Usage
@@ -86,14 +87,17 @@ app.use('/docs', require('md-docs-express')(option));
 mkdir mytest
 cd mytest
 mkdir documents
+mkdir documents/subdir
 ```
 
 2. create example md files
 
 ```bash
-vi documents/A.md
-vi documents/B.md
-vi documents/C.md
+touch documents/A.md
+touch documents/B.md
+touch documents/C.md
+touch documents/subdir/D.md
+touch documents/subdir/E.md
 ```
 
 3. Create express project
